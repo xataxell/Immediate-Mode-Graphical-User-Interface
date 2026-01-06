@@ -52,6 +52,8 @@ local ReGui = {
 	AnimationConnections = {}	
 }
 
+getgenv().ReGui = ReGui
+
 --// Modules
 local IDE = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/lib/ide.lua'))()
 local Wrappers = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/classes/Wrappers.lua'))()
