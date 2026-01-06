@@ -52,8 +52,6 @@ local ReGui = {
 	AnimationConnections = {}	
 }
 
-getgenv().ReGui = ReGui
-
 --// Modules
 local IDE = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/lib/ide.lua'))()
 local Wrappers = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/classes/Wrappers.lua'))()
@@ -6779,5 +6777,7 @@ GenerateColor3Input("DragColor3", "DragInt3")
 GenerateCFrameInput("InputCFrame", "InputInt3")
 GenerateCFrameInput("SliderCFrame", "SliderInt3")
 GenerateCFrameInput("DragCFrame", "DragInt3")
+
+getgenv().ReGui = ReGui
 
 return ReGui
