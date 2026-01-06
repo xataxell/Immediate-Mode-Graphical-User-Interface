@@ -1016,11 +1016,11 @@ function ReGui:ApplyStyle(Object: GuiObject, StyleName: string)
 	local Style = Styles[StyleName]
 	if not Style then return end
 
-	--// Apply style properties
-	self:ApplyFlags({
+	--// (don't) Apply style properties
+	--[[self:ApplyFlags({
 		Object = Object,
 		Class = Style
-	})
+	})]]--
 end
 
 function ReGui:ClassIgnores(Key: string): boolean
