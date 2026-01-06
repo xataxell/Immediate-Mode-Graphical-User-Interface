@@ -6779,5 +6779,3 @@ GenerateCFrameInput("SliderCFrame", "SliderInt3")
 GenerateCFrameInput("DragCFrame", "DragInt3")
 
 return ReGui
-
-getgenv().ReGui = ReGui
