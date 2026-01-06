@@ -16,7 +16,7 @@ local ReGui = {
 	Version = "1.4.7",
 	Author = "Depso",
 	License = "MIT",
-	Repository = "https://github.com/xataxell/Immediate-Mode-Graphical-User-Interface",
+	Repository = "https://github.com/xataxell/Immediate-Mode-Graphical-User-Interface/",
 
 	--// Configuration
 	Debug = false,
@@ -53,21 +53,21 @@ local ReGui = {
 }
 
 --// Modules
-local IDE = require("@lib/ide.lua")
-local Wrappers = require("@classes/Wrappers.lua")
-local Animation = require("@classes/Animations.lua")
-local Signaling = require("@classes/Signaling.lua")
-ReGui.DemoWindow = require("@src/Demo Window.lua")
+local IDE = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/lib/ide.lua'))()
+local Wrappers = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/classes/Wrappers.lua'))()
+local Animation = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/classes/Animations.lua'))()
+local Signaling = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/classes/Signaling.lua'))()
+ReGui.DemoWindow = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/Demo%20Window.lua'))()
 ReGui.Services = Wrappers.Services
 ReGui.Animation = Animation
 
 --// Configurations
-ReGui.Icons = require("@config/Icons.lua")
-ReGui.Accent = require("@config/Accent.lua")
-ReGui.ThemeConfigs = require("@config/Themes.lua")
-ReGui.ElementFlags = require("@config/Flags.lua")
+ReGui.Icons = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/configurations/Icons.lua'))()
+ReGui.Accent = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/configurations/Accent.lua'))()
+ReGui.ThemeConfigs = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/configurations/Themes.lua'))()
+ReGui.ElementFlags = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/configurations/Flags.lua'))()
 
-local Tags = require("@config/Tagging.lua")
+local Tags = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/Immediate-Mode-Graphical-User-Interface/refs/heads/main/src/configurations/Tagging.lua'))()
 ReGui.ElementColors = Tags.Coloring
 ReGui.Animations = Tags.Animations
 ReGui.Styles = Tags.Styles
