@@ -42,7 +42,7 @@ Window:InputText({Label="string"})
 Window:SliderFloat({Label = "float", Minimum = 0.0, Maximum = 1.0})
 ```
 
-<img src="https://github.com/user-attachments/assets/9181571f-39c3-42bc-8677-3a433c92e6e3" width="400px">
+<img src="https://github.com/xataxell/Immediate-Mode-Graphic-User-Interface/blob/main/assets/7d29f46a-107d-42ab-b3ac-59a5189b92c7.png" width="400px">
 
 ## Gallery
 <table>
