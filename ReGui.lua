@@ -887,7 +887,7 @@ MouseEnter={BackgroundTransparency=0.3},MouseLeave={BackgroundTransparency=0}},
 Init='MouseLeave'},Border={Connections={Selected={Transparency=0,Thickness=1},
 Deselected={Transparency=0.7,Thickness=1}},Init='Selected'}}return aa end end
 local aa,ab,ad,ae,af={Version='1.4.7',Author='Depso',License='MIT',Repository=
-'https://web.archive.org/web/20251104171548/https://github.com/depthso/Dear-ReGui/',Debug=false,PrefabsId=71968920594655,
+'https://github.com/xataxell/Immediate-Mode-Graphical-User-Interface/',Debug=false,PrefabsId=71968920594655,
 DefaultTitle='ReGui',ContainerName='ReGui',DoubleClickThreshold=0.3,
 TooltipOffset=15,IniToSave={'Value'},ClassIgnored={'Visible','Text'},Container=
 nil,Prefabs=nil,FocusedWindow=nil,HasTouchScreen=false,Services=nil,Elements={},
